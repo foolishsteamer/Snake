@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .map {
+            width: 800px;
+            height: 600px;
+            background-color: #ccc;
+            position: relative;
+            top: 0px;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="map" id="map"></div>
+
+    <script src="Food.js"></script>
+    <script src="Snake.js"></script>
+    <script src="Game.js"></script>
+    <script>
+        var map = document.getElementById("map");
+        //把所有对象整合到Game对象中
+        var game = new Game(map);
+        game.start();
+        // var food1 = new Food();
+        // food1.render(map);
+        // var Snake1 = new Snake();
+        // Snake1.render(map);
+    </script>
+</body>
+</html>
